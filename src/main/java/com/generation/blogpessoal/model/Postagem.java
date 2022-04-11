@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.hibernate.annotations.UpdateTimestamp;
@@ -27,7 +28,7 @@ public class Postagem {
 	@Size(min = 6, max = 100, message = "O atributo deve possuir entre 6 a 100 caracteres")
 	private String titulo;
 	
-	@NotBlank(message = "O atributo título é obrigatório")
+	@NotNull(message = "O atributo título é obrigatório")
 	@Size(min = 10, max = 2500, message = "O atributo deve possuir entre 10 a 2500 caracteres")
 	private String texto;
 	
