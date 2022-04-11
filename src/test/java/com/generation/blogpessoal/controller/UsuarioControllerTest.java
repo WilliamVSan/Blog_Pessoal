@@ -145,6 +145,7 @@ public class UsuarioControllerTest {
                 .exchange("/usuarios/logar", HttpMethod.POST, requisicao, Usuariologin.class);
 
         assertEquals(HttpStatus.OK, resposta.getStatusCode());
+
     }
 
 }
