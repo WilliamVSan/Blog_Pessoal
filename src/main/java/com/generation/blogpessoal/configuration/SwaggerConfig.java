@@ -24,7 +24,7 @@ public class SwaggerConfig {
                         .description("Projeto Blog Pessoal - Generation Brasil")
                         .version("v0.0.1")
                 .license(new License()
-                        .name("Uiulian")
+                        .name("Generation Brasil")
                         .url("https://brazil.generation.org/"))
                 .contact(new Contact()
                         .name("William")
